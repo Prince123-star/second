@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>PRINCE</title>
+</head>
+<body class="dark">
+    
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>
+                <span>PRI</span>NCE
+            </h1>
+        </div>
+        
+        <div class="navlinks">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Me</a></li>
+                <!-- <li><a href="">Projects</a></li> -->
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-all">
+            <button class="btn" onclick="openSidebar()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+       
+    </nav>
+    
+    <div class="sidebar" id="sidebar">
+
+         <button class="btn" onclick="closeSidebar()">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="sidebarlink">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Me</a></li>
+                <!-- <li><a href="">Projects</a></li> -->
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-contact">
+            <h3>Hi</h3>
+
+            <h1>I'm <span>PRINCE<br></span>a Frontend Developer</h1>
+
+            <p>focused on building responsive, accessible, and visually appealing websites. With a strong eye for design and attention to detail, I turn ideas into smooth, interactive digital experiences. Whether it’s creating clean layouts, optimizing performance, or ensuring cross-device compatibility, I love crafting web solutions that not only look great but also work seamlessly.</p>
+
+            <div class="btn-box">
+                <button class="btn-1">Hire ME</button>
+                <button class="btn-2">Experience</button>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="img/img.jpg" alt="">
+        </div>
+    </section>
+    
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="img/img.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>I’m a passionate Front-End Developer dedicated to building responsive, user-friendly websites and web applications. I enjoy turning ideas into reality using clean code and modern technologies like HTML, CSS, JavaScript, and React. I’m always learning and striving to improve my skills to create better digital experiences.</p>
+            <button class="btn-2">Experience</button>
+        </div>
+
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2 class="contact-me">
+            Contact <span>Me</span>
+        </h2>
+
+        <form action="">
+
+            <div class="input-box">
+                <input type="text" name="" id="" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="" id="" placeholder="Phone Number" required>
+
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" name="" id="" value="Send Message"
+            class="btn-1">
+        </form>
+    </section>
+    
+    <footer class="footer">
+
+        <div class="social">
+            <ul>
+                <li><a href="https://Wa.me/2348105880641" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <ul class="list">
+            <li><a href="">FAQ</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="">Privacy Policy</a></li>
+        </ul>
+
+
+        <p class="copyright">&copy; Developed By <span><i class="fa-solid fa-face-grin"></i> PRINCE</span> 2025 </p>
+    </footer>
+
+    <script src="script.js"></script>
+        
+
+</body>
+</html>

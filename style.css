@@ -21,6 +21,15 @@ body.light {
   color: black;
 }
 
+body.light .home-contact h2 span:after {
+  background: rgb(241, 241, 241);
+  color: black;
+}
+
+body.light .home-contact h2 span{
+  color: black;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -154,6 +163,41 @@ span{
     line-height: 1.2;
 }
 
+/* aminated */
+
+.home-contact h2 span{
+    position: relative;
+    color: white;
+}
+
+.home-contact h2{
+    font-size: 62px;
+}
+
+
+.home-contact h2 span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0px;
+    height: 100%;
+    border-left: 4px solid orangered;
+    background-color: #333;
+    animation: text 3s infinite backwards steps(10);
+}
+
+@keyframes text {
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
 .home-contact p{
     font-size: 18px;
     margin: 25px 0 30px;
@@ -208,6 +252,21 @@ span{
     width: 350px;
     /* incase */
     margin-bottom: 100px;
+    transition: .4s ease-in-out;
+    animation: animate 2.5s ease-in-out forwards infinite;
+    filter: brightness(1.btn-1);
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 ::-webkit-scrollbar{
@@ -239,6 +298,9 @@ span{
     box-shadow: 0 0 25px orangered,
                 0 0 50px orangered;
     border-radius: 50%;
+     transition: .4s ease-in-out;
+    animation: animate 2.5s ease-in-out forwards infinite;
+    filter: brightness(1.btn-1);
 }
 
 .about-content h2{
@@ -247,9 +309,26 @@ span{
     font-size: 42px;
 }
 
+/* aminated */
+
+.about-content h3 span{
+    position: relative;
+}
+
 .about-content h3{
-    color: white;
     font-size: 62px;
+}
+
+
+.about-content h3 span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0px;
+    height: 100%;
+    border-left: 4px solid orangered;
+    background-color: black;
+    animation: text 3s infinite backwards steps(10);
 }
 
 .about-content p{
@@ -384,10 +463,90 @@ span{
     .contact-form{
         margin: 50px 50px;
     }
+
+    /* aminated */
+
+    .home-contact h1{
+        font-size: 57px;
+    }
+
+    .home-contact h3{
+        font-size: 37px;
+    }
+
+    .home-contact h2{
+    font-size: 57px;
+    }
+
+
+
+    .about-content h2{
+        font-size: 37px;
+    }
+
+   .about-content h3{
+        position: relative;
+        font-size: 57px;
+    }
+
+
 }
+
+
+
+
 
 @media (max-width: 500px) {
     .sidebar{
         width: 100%;
+    }
+
+     .about-img img{
+        width: 340px;
+    }
+
+    .img-box img{
+        width: 340px;
+    }
+
+     /* aminated */
+
+    .home-contact h1{
+        font-size: 32px;
+    }
+
+    .home-contact h3{
+        font-size: 25px;
+    }
+
+    .home-contact h2 span{
+        position: relative;
+        color: white;
+    }
+
+    .home-contact h2{
+        font-size: 32px;
+    }
+
+    .home-contact p{
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .about-content h2{
+        font-size: 25px;
+    }
+
+   .about-content h3 span{
+        position: relative;
+    }
+
+    .about-content h3{
+        font-size: 32px;
+    }
+
+    .about-content p{
+        font-size: 17px;
+        line-height: 22px;
     }
 }

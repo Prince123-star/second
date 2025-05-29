@@ -441,6 +441,39 @@ span{
 }
 
 
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000; /* Black background */
+  color: #fff;            /* White arrow */
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;     /* Make it perfectly round */
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* Strong box shadow to show on dark or light backgrounds */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 
+              0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1.05);
+}
+
+.scroll-top-btn:hover {
+  transform: scale(1.1);
+}
+
+
 
 
 @media (max-width: 800px) {
